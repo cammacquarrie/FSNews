@@ -56,10 +56,7 @@ public class YahooOAuth {
 	private final static String LEAGUE_URL = "http://fantasysports.yahooapis.com/fantasy/v2/league/";
 	private final static String USER_URL = "http://fantasysports.yahooapis.com/fantasy/v2/users;use_login=1/";
 
-	private final static OAuth10aService service = new ServiceBuilder()
-			.apiKey("dj0yJmk9OUhvczhNN20ySUg3JmQ9WVdrOWVtaGFhMlJOTnpJbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD0xYQ--")
-			.apiSecret("a99206550feb10821b3957bc9e9eede6fa2f2b97")
-			.callback("http://localhost:8080/FantasySportsNews/verified").build(YahooApi.instance());
+
 
 	// return the url to the verification page
 	public String requestToken() {
